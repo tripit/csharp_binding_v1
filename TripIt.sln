@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripIt", "TripIt.csproj", "{C2986992-E73A-42AE-BE2A-8D19C1FFF458}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example.csproj", "{C4D974B1-1DBC-4400-8067-7877E66A2D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetAuthorizedToken", "GetAuthorizedToken.csproj", "{78310BBF-4D30-4AE8-B876-8614F6A84A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakePostRequest", "MakePostRequest.csproj", "{965E18AC-5EF0-4827-A3B6-92BCA21D8A95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetRequestToken", "GetRequestToken.csproj", "{CEA699A1-0483-489C-98F5-2B6C7EAD272D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrustAllCertificatesPolicy", "TrustAllCertificatesPolicy.csproj", "{B857319C-1296-4E6B-ACDE-5A59E5C26922}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78310BBF-4D30-4AE8-B876-8614F6A84A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78310BBF-4D30-4AE8-B876-8614F6A84A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78310BBF-4D30-4AE8-B876-8614F6A84A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78310BBF-4D30-4AE8-B876-8614F6A84A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965E18AC-5EF0-4827-A3B6-92BCA21D8A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965E18AC-5EF0-4827-A3B6-92BCA21D8A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965E18AC-5EF0-4827-A3B6-92BCA21D8A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965E18AC-5EF0-4827-A3B6-92BCA21D8A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B857319C-1296-4E6B-ACDE-5A59E5C26922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B857319C-1296-4E6B-ACDE-5A59E5C26922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B857319C-1296-4E6B-ACDE-5A59E5C26922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B857319C-1296-4E6B-ACDE-5A59E5C26922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2986992-E73A-42AE-BE2A-8D19C1FFF458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2986992-E73A-42AE-BE2A-8D19C1FFF458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2986992-E73A-42AE-BE2A-8D19C1FFF458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2986992-E73A-42AE-BE2A-8D19C1FFF458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D974B1-1DBC-4400-8067-7877E66A2D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D974B1-1DBC-4400-8067-7877E66A2D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D974B1-1DBC-4400-8067-7877E66A2D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D974B1-1DBC-4400-8067-7877E66A2D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA699A1-0483-489C-98F5-2B6C7EAD272D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA699A1-0483-489C-98F5-2B6C7EAD272D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA699A1-0483-489C-98F5-2B6C7EAD272D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA699A1-0483-489C-98F5-2B6C7EAD272D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2671F6FF-ECFA-4049-BA00-4437A4FB428A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2671F6FF-ECFA-4049-BA00-4437A4FB428A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2671F6FF-ECFA-4049-BA00-4437A4FB428A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2671F6FF-ECFA-4049-BA00-4437A4FB428A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 0.1
+		StartupItems = $0
+		$0.Item = GetRequestToken.csproj
+		$0.Item = GetAuthorizedToken.csproj
+		$0.Item = Example.csproj
+		$0.Item = MakePostRequest.csproj
+	EndGlobalSection
+EndGlobal
