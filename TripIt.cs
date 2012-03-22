@@ -130,7 +130,7 @@ namespace TripIt {
         /// <returns>
         /// A <see cref="TravelObject.Response"/> containing the requested Trip.
         /// </returns>
-        public TravelObject.Response GetTrip(int id) {
+        public TravelObject.Response GetTrip(long id) {
             return GetTrip(id, new Dictionary<string, string>());
         }
         
@@ -149,20 +149,20 @@ namespace TripIt {
         /// <returns>
         /// A <see cref="TravelObject.Response"/>
         /// </returns>
-        public TravelObject.Response GetTrip(int id, Dictionary<string, string> filter) {
+        public TravelObject.Response GetTrip(long id, Dictionary<string, string> filter) {
             filter.Add("id", id.ToString());
             return DoRequest("get", "trip", filter, null);
         }
         
-        public TravelObject.Response GetAir(int id) {
+        public TravelObject.Response GetAir(long id) {
             return DoRequest("get", "air", IdFilter(id), null);
         }
         
-        public TravelObject.Response GetLodging(int id) {
+        public TravelObject.Response GetLodging(long id) {
             return DoRequest("get", "lodging", IdFilter(id), null);
         }
         
-        public TravelObject.Response GetCar(int id) {
+        public TravelObject.Response GetCar(long id) {
             return DoRequest("get", "car", IdFilter(id), null);
         }
         
@@ -170,157 +170,157 @@ namespace TripIt {
             return DoRequest("get", "profile", null, null);
         }
         
-        public TravelObject.Response GetRail(int id) {
+        public TravelObject.Response GetRail(long id) {
             return DoRequest("get", "rail", IdFilter(id), null);
         }
         
-        public TravelObject.Response GetTransport(int id) {
+        public TravelObject.Response GetTransport(long id) {
             return DoRequest("get", "transport", IdFilter(id), null);
         }
         
-        public TravelObject.Response GetCruise(int id) {
+        public TravelObject.Response GetCruise(long id) {
             return DoRequest("get", "cruise", IdFilter(id), null);
         }
         
-        public TravelObject.Response GetRestaurant(int id) {
+        public TravelObject.Response GetRestaurant(long id) {
             return DoRequest("get", "restaurant", IdFilter(id), null);
         }
         
-        public TravelObject.Response GetActivity(int id) {
+        public TravelObject.Response GetActivity(long id) {
             return DoRequest("get", "activity", IdFilter(id), null);
         }
         
-        public TravelObject.Response GetNote(int id) {
+        public TravelObject.Response GetNote(long id) {
             return DoRequest("get", "note", IdFilter(id), null);
         }
         
-        public TravelObject.Response GetMap(int id) {
+        public TravelObject.Response GetMap(long id) {
             return DoRequest("get", "map", IdFilter(id), null);
         }
         
-        public TravelObject.Response GetDirections(int id) {
+        public TravelObject.Response GetDirections(long id) {
             return DoRequest("get", "directions", IdFilter(id), null);
         }
 		
-		public TravelObject.Response GetPointsProgram(int id) {
-			return DoRequest("get", "points_program", IdFilter(id), null);
-		}
+        public TravelObject.Response GetPointsProgram(long id) {
+            return DoRequest("get", "points_program", IdFilter(id), null);
+        }
         
-        public TravelObject.Response DeleteTrip(int id) {
+        public TravelObject.Response DeleteTrip(long id) {
             return DoRequest("delete", "trip", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteAir(int id) {
+        public TravelObject.Response DeleteAir(long id) {
             return DoRequest("delete", "air", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteLodging(int id) {
+        public TravelObject.Response DeleteLodging(long id) {
             return DoRequest("delete", "lodging", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteCar(int id) {
+        public TravelObject.Response DeleteCar(long id) {
             return DoRequest("delete", "car", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteRail(int id) {
+        public TravelObject.Response DeleteRail(long id) {
             return DoRequest("delete", "rail", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteTransport(int id) {
+        public TravelObject.Response DeleteTransport(long id) {
             return DoRequest("delete", "transport", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteCruise(int id) {
+        public TravelObject.Response DeleteCruise(long id) {
             return DoRequest("delete", "cruise", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteRestaurant(int id) {
+        public TravelObject.Response DeleteRestaurant(long id) {
             return DoRequest("delete", "restaurant", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteActivity(int id) {
+        public TravelObject.Response DeleteActivity(long id) {
             return DoRequest("delete", "activity", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteNote(int id) {
+        public TravelObject.Response DeleteNote(long id) {
             return DoRequest("delete", "note", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteMap(int id) {
+        public TravelObject.Response DeleteMap(long id) {
             return DoRequest("delete", "map", IdFilter(id), null);
         }
         
-        public TravelObject.Response DeleteDirections(int id) {
+        public TravelObject.Response DeleteDirections(long id) {
             return DoRequest("delete", "directions", IdFilter(id), null);
         }
         
-        public TravelObject.Response ReplaceTrip(int id, string xml) {
+        public TravelObject.Response ReplaceTrip(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "trip", null, filter);
         }
         
-        public TravelObject.Response ReplaceAir(int id, string xml) {
+        public TravelObject.Response ReplaceAir(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "air", null, filter);
         }
         
-        public TravelObject.Response ReplaceLodging(int id, string xml) {
+        public TravelObject.Response ReplaceLodging(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "lodging", null, filter);
         }
         
-        public TravelObject.Response ReplaceCar(int id, string xml) {
+        public TravelObject.Response ReplaceCar(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "car", null, filter);
         }
         
-        public TravelObject.Response ReplaceRail(int id, string xml) {
+        public TravelObject.Response ReplaceRail(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "rail", null, filter);
         }
         
-        public TravelObject.Response ReplaceTransport(int id, string xml) {
+        public TravelObject.Response ReplaceTransport(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "transport", null, filter);
         }
         
-        public TravelObject.Response ReplaceCruise(int id, string xml) {
+        public TravelObject.Response ReplaceCruise(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "cruise", null, filter);
         }
         
-        public TravelObject.Response ReplaceRestaurant(int id, string xml) {
+        public TravelObject.Response ReplaceRestaurant(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "restaurant", null, filter);
         }
         
-        public TravelObject.Response ReplaceActivity(int id, string xml) {
+        public TravelObject.Response ReplaceActivity(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "activity", null, filter);
         }
         
-        public TravelObject.Response ReplaceNote(int id, string xml) {
+        public TravelObject.Response ReplaceNote(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "note", null, filter);
         }
         
-        public TravelObject.Response ReplaceMap(int id, string xml) {
+        public TravelObject.Response ReplaceMap(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "map", null, filter);
         }
         
-        public TravelObject.Response ReplaceDirections(int id, string xml) {
+        public TravelObject.Response ReplaceDirections(long id, string xml) {
             Dictionary<string, string> filter = IdFilter(id);
             filter.Add("xml", xml);
             return DoRequest("replace", "directions", null, filter);
@@ -342,9 +342,9 @@ namespace TripIt {
             return DoRequest("list", "object", filter, null);
         }
 		
-		public TravelObject.Response ListPointsProgram() {
-			return DoRequest("list", "points_program", null, null);
-		}
+        public TravelObject.Response ListPointsProgram() {
+            return DoRequest("list", "points_program", null, null);
+        }
         
         /// <summary>
         /// Create an object.
@@ -392,7 +392,7 @@ namespace TripIt {
 			return DoRequest("crsDeleteReservations", null, args, null);
 		}
         
-        private Dictionary<string, string> IdFilter(int id) {
+        private Dictionary<string, string> IdFilter(long id) {
             Dictionary<string, string> filter = new Dictionary<string, string>();
             filter.Add("id", id.ToString());
             return filter;
