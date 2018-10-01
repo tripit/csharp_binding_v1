@@ -1,5 +1,5 @@
 /*
- * Copyright 2008-2012 Concur Technologies, Inc.
+ * Copyright 2008-2018 Concur Technologies, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -19,5 +19,5 @@ using System.Reflection;
 [assembly: AssemblyTitle("TripIt API .NET Language Bindings")]
 [assembly: AssemblyCompany("TripIt, Inc.")]
 [assembly: AssemblyProduct("TripIt API .NET Language Bindings")]
-[assembly: AssemblyCopyright("Copyright 2010 TripIt, Inc.")]
+[assembly: AssemblyCopyright("Copyright 2008-2018 TripIt, Inc.")]
 [assembly: AssemblyVersion("1.0.0.*")]
