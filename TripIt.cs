@@ -464,6 +464,12 @@ namespace TripIt {
                 url = urlBase;
             }
             
+            // In .Net 4.6 and above TLS 1.2 is default.
+            // In .Net 4.5 we need to explicitly set it like this, 
+	    // ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+            // In .Net 4 we need to force it like this,
+            // ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;		
+		
             WebRequest request = WebRequest.Create(url);
             if (postArgs != null) {
                 args = postArgs;
